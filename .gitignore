@@ -1,0 +1,10 @@
+# Nao versionar artefatos de build da imagem local nem kits baixados
+*.tgz
+*.tar.bz2
+pin_kit/
+sde_kit/
+mcpat/
+
+# Logs de execucao locais fora de results/ (uso adhoc)
+*.log
+!results/**/*.log
