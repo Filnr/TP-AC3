@@ -8,3 +8,7 @@ mcpat/
 # Logs de execucao locais fora de results/ (uso adhoc)
 *.log
 !results/**/*.log
+
+# Fontes de terceiros baixados por benchmarks/fetch_workloads.sh e objetos intermediarios
+benchmarks/third_party/
+benchmarks/build/

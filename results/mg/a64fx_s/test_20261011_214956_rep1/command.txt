@@ -1,0 +1,11 @@
+data:      2026-10-11T21:49:56-03:00
+workload:  mg   cenario: a64fx_s   size: test   rep: 1
+imagem:    larc-thermal-sniper:latest (sha256:336d715c7075bfc3a4736df3b2800d7705070af6f36efcd836f15e38d6ae9183)
+git:       7009177467085722db9dfb0b4de9dcafc54c9dba (dirty: 20 arquivos)
+host:      Linux 7.2.7-arch1-1 x86_64, 16 threads, 13.3 GiB
+timeout:   900 s
+nativo:    OMP_NUM_THREADS=12 /work/benchmarks/bin-m3/mg.S.x
+sniper:    OMP_NUM_THREADS=12 /opt/sniper/run-sniper -n 12 -c a64fx_s -c power --roi -d /work/results/mg/a64fx_s/test_20261011_214956_rep1/sniper -- /work/benchmarks/bin-m3/mg.S.x
+native_rc: 0
+sniper_rc: 134
+sniper_wall_s: 9

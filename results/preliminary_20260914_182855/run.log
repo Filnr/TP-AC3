@@ -1,0 +1,119 @@
+[SNIPER] Running ['/opt/sniper/record-trace', '-o', '/tmp/tmpy984qyfv/run_benchmarks', '-v', '--roi', '-e', '1', '-s', '0', '-r', '1', '--follow', '--routine-tracing', '--', './fft', '-p', '1']
+[SNIPER] Start
+[SNIPER] Running ['bash', '-c', '/opt/sniper/lib/sniper -c /opt/sniper/config/base.cfg --general/total_cores=1 --general/output_dir=/opt/sniper/test/fft --config=/opt/sniper/config/nehalem.cfg --config=/opt/sniper/config/gainestown.cfg --config=/opt/sniper/config/common_configs/base_system_sniperspace.cfg --config=/opt/sniper/config/core_configs/meteor_lake_pcore.cfg --config=/opt/sniper/config/mmu_configs/mmu_base.cfg --config=/opt/sniper/config/pagetable_configs/4_level_radix.cfg --config=/opt/sniper/config/pagetable_configs/range_table.cfg --config=/opt/sniper/config/dram_configs/ddr4_2400.cfg --config=/opt/sniper/config/physical_memory_allocators/reserve_thp.cfg --config=/opt/sniper/config/address_translation_schemes/baseline.cfg -g --general/magic=true -g --traceinput/stop_with_first_app=true -g --traceinput/restart_apps=false -g --traceinput/stop_with_first_app=false -g --traceinput/enabled=true -g --traceinput/emulate_syscalls=true -g --traceinput/num_apps=1 -g --traceinput/trace_prefix=/tmp/tmpy984qyfv/run_benchmarks']
+
+[Memory Manager] Initializing Memory Hierarchy for core 0
+[MMU_BASE] Initializing MMU Base for core 0 with name: mmu
+[MMU_BASE] Count page fault latency enabled: No
+
+[MMU] Initializing MMU for core 0
+[MMU] Page walk caches are enabled
+[MMU] Instantiating TLB Hierarchy
+[TLB] Number of Levels: 2
+[MMU] Instantiating TLB: mmu_TLB_L1_1  Core ID: 0  Stores: Data  Number of entries: 64  Associativity: 4  TLB Type: Data  Allocate on miss: true  Number of prefetchers: 0  Access latency: 0ns  Page sizes: 1
+[MMU] Instantiating TLB: mmu_TLB_L1_2  Core ID: 0  Stores: Data  Number of entries: 64  Associativity: 4  TLB Type: Data  Allocate on miss: true  Number of prefetchers: 0  Access latency: 0ns  Page sizes: 1
+[MMU] Instantiating TLB: mmu_TLB_L1_3  Core ID: 0  Stores: Instruction  Number of entries: 64  Associativity: 4  TLB Type: Instruction  Allocate on miss: true  Number of prefetchers: 0  Access latency: 0ns  Page sizes: 2
+[MMU] Instantiating TLB: mmu_TLB_L2_1  Core ID: 0  Stores: Unified  Number of entries: 2048  Associativity: 8  TLB Type: Unified  Allocate on miss: false  Number of prefetchers: 0  Access latency: 2ns  Page sizes: 2
+
+[Memory Hierarchy] Creating nuca-cache cache with 8192 sets, 16-way associative, 64B blocksize
+[Memory Hierarchy] Initializing cache 
+[Memory Hierarchy] Creating L1-I cache with 64 sets, 16-way associative, 64B blocksize
+[Memory Hierarchy] Initializing cache 
+[Memory Hierarchy] Creating L1-D cache with 64 sets, 12-way associative, 64B blocksize
+[Memory Hierarchy] Initializing cache 
+[Memory Hierarchy] Creating L2 cache with 2048 sets, 16-way associative, 64B blocksize
+[Memory Hierarchy] Memory Hierarchy Initialized
+
+[EXCEPTION_HANDLER_FACTORY] Creating sniper-space handler of type: default for core 0
+
+[EXCEPTION_HANDLER] Initializing Exception Handler (sniper-space MimicOS)
+[EXCEPTION_HANDLER] Initialised from the Core constructor
+[MimicOS] Initializing MimicOS: mimicos_host
+[MimicOS] [createAllocator] Creating physical memory allocator for mimicos_host - allocator_name = reserve_thp  - allocator_type = reserve_thp
+[MimicOS] Kernel size in MB: 32768
+[MimicOS] Reservation-based THP Allocator
+[MimicOS] ReserveTHP: threshold_for_promotion = 0
+[Buddy] Memory Size: 131072
+[Buddy] 4KB pages in memory: 25165824
+[Buddy] 2MB pages in memory: 49152
+[Buddy] 1GB pages in memory: 96
+[MimicOS] Memory Allocator of type reserve_thp created.
+[MimicOS] Using ratio-based fragmentation with target ratio 0
+[BUDDY] Fragmenting memory to achieve target fragmentation: 0
+Record value_vma: 0
+[RECORD-TRACE] Using the SDE frontend (sift/recorder)
+[SIFT_RECORDER] Running /opt/sniper/sde_kit/sde64  -t64 /opt/sniper/sift/recorder/obj-intel64/sde_sift_recorder.so -sniper:verbose 1 -sniper:debug 0 -sniper:roi 1 -sniper:vma 0 -sniper:roi-mpi 0 -sniper:f 0 -sniper:d 0 -sniper:b 0 -sniper:o /tmp/tmpy984qyfv/run_benchmarks -sniper:e 1  -sniper:s 0 -sniper:r 1  -sniper:pa 0 -sniper:rtntrace  1 -sniper:stop 0    -- ./fft -p 1
+[SIFT_RECORDER:0:0] Output = [/tmp/tmpy984qyfv/run_benchmarks.app0.th0.sift]
+[SIFT_RECORDER:0:0] Response = [/tmp/tmpy984qyfv/run_benchmarks_response.app0.th0.sift]
+[BUDDY] Initialized memory with final fragmentation: 0
+[BUDDY] Free pages: 25165824
+[BUDDY] Free pages in (MB): 98304
+[HUGETLBFS] Service disabled in configuration
+[MimicOS] Initialization complete
+Creating new application with app id = 0
+[Radix Page Table] Creating 4-level Radix table with name: radix_4levelfor app id: 0
+[Radix Page Table] Page sizes: 2
+[Page Table] Page size: 12
+[Page Table] Page size: 21
+[Radix Page Table] Levels: 4
+[Radix Page Table] Frame size: 512 entries
+[Radix Page Table] createRadixPageTable created new PageTableRadix object with name: radix_4level and type: radix
+[TraceManager] Setting trace readers for the first application
+[SNIPER] --------------------------------------------------------------------------------
+[SNIPER] Sniper using SIFT/trace-driven frontend
+[SNIPER] Running pre-ROI region in  CACHE_ONLY mode
+[SNIPER] Running application ROI in DETAILED mode
+[SNIPER] Running post-ROI region in FAST_FORWARD mode
+[SNIPER] --------------------------------------------------------------------------------
+[TraceThread] Thread 0 (app 0) started on host CPU 0
+initRecorderBase()
+Shall we track VMAs? 0
+[CONTROLLER] tid: 0 ip: 0x4018b0 0 Start
+[CONTROLLER] tid: 0 ip: 0x4018b0 0 Start
+[EXCEPTION_HANDLER] Allocator is NULL, getting it from the MimicOS
+[SNIPER] Enabling performance models
+[SNIPER] Setting instrumentation mode to DETAILED
+[SIFT_RECORDER:0] ROI Begin
+[SNIPER] Disabling performance models
+[SNIPER] Leaving ROI after 4.21 seconds
+[SNIPER] Simulated 1.3M instructions, 2.4M cycles, 0.52 IPC
+[SNIPER] Simulation Time 0.000
+[SNIPER] Simulation speed 302.2 KIPS (302.2 KIPS / target core - 3308.5ns/instr)
+[SNIPER] Sampling: executed 25.69% of simulated time in detailed mode
+[SNIPER] Setting instrumentation mode to FAST_FORWARD
+[TRACE:0] -- DONE --
+[SIFT_RECORDER:0] ROI End
+
+FFT with Blocking Transpose
+   1024 Complex Doubles
+   1 Processors
+   65536 Cache lines
+   16 Byte line size
+   4096 Bytes per page
+
+
+                 PROCESS STATISTICS
+            Computation      Transpose     Transpose
+ Proc          Time            Time        Fraction
+    0                96             14       0.14583
+
+                 TIMING INFORMATION
+Start time                        :      -1844408259
+Initialization finish time        :      -1844407939
+Overall finish time               :      -1844407843
+Total time with initialization    :              416
+Total time without initialization :               96
+Overall transpose time            :               14
+Overall transpose fraction        :          0.14583
+
+[SIFT_RECORDER:0:0] Recorded 1176149 (out of 1320650) instructions
+[EXCEPTION_HANDLER] SniperExceptionHandler destructor called
+[Memory Manager] Destroying MMU for core 0
+[MMU] Destroying MMU for core 0
+[MMU Sanity] Core 0 checked 47 unique VA->PA mappings, 47 unique PA->VA mappings, 0 violations detected
+[Memory Manager] Core 0 accessed 1232 unique data cache lines
+[HUGETLBFS] Service destroyed
+[SNIPER] End
+[SNIPER] Elapsed time: 8.70 seconds
+[SNIPER] Generating statistics
+[SNIPER] Organizing output files

@@ -1,0 +1,384 @@
+[SNIPER] Start
+
+[Memory Manager] Initializing Memory Hierarchy for core 0
+[MMU_BASE] Initializing MMU Base for core 0 with name: mmu
+[MMU_BASE] Count page fault latency enabled: No
+
+[MMU] Initializing MMU for core 0
+[MMU] Page walk caches are enabled
+[MMU] Instantiating TLB Hierarchy
+[TLB] Number of Levels: 2
+[MMU] Instantiating TLB: mmu_TLB_L1_1  Core ID: 0  Stores: Data  Number of entries: 64  Associativity: 4  TLB Type: Data  Allocate on miss: true  Number of prefetchers: 0  Access latency: 0ns  Page sizes: 1
+[MMU] Instantiating TLB: mmu_TLB_L1_2  Core ID: 0  Stores: Data  Number of entries: 64  Associativity: 4  TLB Type: Data  Allocate on miss: true  Number of prefetchers: 0  Access latency: 0ns  Page sizes: 1
+[MMU] Instantiating TLB: mmu_TLB_L1_3  Core ID: 0  Stores: Instruction  Number of entries: 64  Associativity: 4  TLB Type: Instruction  Allocate on miss: true  Number of prefetchers: 0  Access latency: 0ns  Page sizes: 2
+[MMU] Instantiating TLB: mmu_TLB_L2_1  Core ID: 0  Stores: Unified  Number of entries: 2048  Associativity: 8  TLB Type: Unified  Allocate on miss: false  Number of prefetchers: 0  Access latency: 5ns  Page sizes: 2
+
+[Memory Hierarchy] Initializing cache 
+[Memory Hierarchy] Creating L1-I cache with 64 sets, 4-way associative, 256B blocksize
+[Memory Hierarchy] Initializing cache 
+[Memory Hierarchy] Creating L1-D cache with 64 sets, 4-way associative, 256B blocksize
+[Memory Hierarchy] Initializing cache 
+[Memory Hierarchy] Creating L2 cache with 2048 sets, 16-way associative, 256B blocksize
+[Memory Hierarchy] Memory Hierarchy Initialized
+
+[EXCEPTION_HANDLER_FACTORY] Creating sniper-space handler of type: default for core 0
+
+[EXCEPTION_HANDLER] Initializing Exception Handler (sniper-space MimicOS)
+[EXCEPTION_HANDLER] Initialised from the Core constructor
+
+[Memory Manager] Initializing Memory Hierarchy for core 1
+[MMU_BASE] Initializing MMU Base for core 1 with name: mmu
+[MMU_BASE] Count page fault latency enabled: No
+
+[MMU] Initializing MMU for core 1
+[MMU] Page walk caches are enabled
+[MMU] Instantiating TLB Hierarchy
+[TLB] Number of Levels: 2
+[MMU] Instantiating TLB: mmu_TLB_L1_1  Core ID: 1  Stores: Data  Number of entries: 64  Associativity: 4  TLB Type: Data  Allocate on miss: true  Number of prefetchers: 0  Access latency: 0ns  Page sizes: 1
+[MMU] Instantiating TLB: mmu_TLB_L1_2  Core ID: 1  Stores: Data  Number of entries: 64  Associativity: 4  TLB Type: Data  Allocate on miss: true  Number of prefetchers: 0  Access latency: 0ns  Page sizes: 1
+[MMU] Instantiating TLB: mmu_TLB_L1_3  Core ID: 1  Stores: Instruction  Number of entries: 64  Associativity: 4  TLB Type: Instruction  Allocate on miss: true  Number of prefetchers: 0  Access latency: 0ns  Page sizes: 2
+[MMU] Instantiating TLB: mmu_TLB_L2_1  Core ID: 1  Stores: Unified  Number of entries: 2048  Associativity: 8  TLB Type: Unified  Allocate on miss: false  Number of prefetchers: 0  Access latency: 5ns  Page sizes: 2
+
+[Memory Hierarchy] Initializing cache 
+[Memory Hierarchy] Creating L1-I cache with 64 sets, 4-way associative, 256B blocksize
+[Memory Hierarchy] Initializing cache 
+[Memory Hierarchy] Creating L1-D cache with 64 sets, 4-way associative, 256B blocksize
+[Memory Hierarchy] Initializing cache 
+[Memory Hierarchy] Memory Hierarchy Initialized
+
+[EXCEPTION_HANDLER_FACTORY] Creating sniper-space handler of type: default for core 1
+
+[EXCEPTION_HANDLER] Initializing Exception Handler (sniper-space MimicOS)
+[EXCEPTION_HANDLER] Initialised from the Core constructor
+
+[Memory Manager] Initializing Memory Hierarchy for core 2
+[MMU_BASE] Initializing MMU Base for core 2 with name: mmu
+[MMU_BASE] Count page fault latency enabled: No
+
+[MMU] Initializing MMU for core 2
+[MMU] Page walk caches are enabled
+[MMU] Instantiating TLB Hierarchy
+[TLB] Number of Levels: 2
+[MMU] Instantiating TLB: mmu_TLB_L1_1  Core ID: 2  Stores: Data  Number of entries: 64  Associativity: 4  TLB Type: Data  Allocate on miss: true  Number of prefetchers: 0  Access latency: 0ns  Page sizes: 1
+[MMU] Instantiating TLB: mmu_TLB_L1_2  Core ID: 2  Stores: Data  Number of entries: 64  Associativity: 4  TLB Type: Data  Allocate on miss: true  Number of prefetchers: 0  Access latency: 0ns  Page sizes: 1
+[MMU] Instantiating TLB: mmu_TLB_L1_3  Core ID: 2  Stores: Instruction  Number of entries: 64  Associativity: 4  TLB Type: Instruction  Allocate on miss: true  Number of prefetchers: 0  Access latency: 0ns  Page sizes: 2
+[MMU] Instantiating TLB: mmu_TLB_L2_1  Core ID: 2  Stores: Unified  Number of entries: 2048  Associativity: 8  TLB Type: Unified  Allocate on miss: false  Number of prefetchers: 0  Access latency: 5ns  Page sizes: 2
+
+[Memory Hierarchy] Initializing cache 
+[Memory Hierarchy] Creating L1-I cache with 64 sets, 4-way associative, 256B blocksize
+[Memory Hierarchy] Initializing cache 
+[Memory Hierarchy] Creating L1-D cache with 64 sets, 4-way associative, 256B blocksize
+[Memory Hierarchy] Initializing cache 
+[Memory Hierarchy] Memory Hierarchy Initialized
+
+[EXCEPTION_HANDLER_FACTORY] Creating sniper-space handler of type: default for core 2
+
+[EXCEPTION_HANDLER] Initializing Exception Handler (sniper-space MimicOS)
+[EXCEPTION_HANDLER] Initialised from the Core constructor
+
+[Memory Manager] Initializing Memory Hierarchy for core 3
+[MMU_BASE] Initializing MMU Base for core 3 with name: mmu
+[MMU_BASE] Count page fault latency enabled: No
+
+[MMU] Initializing MMU for core 3
+[MMU] Page walk caches are enabled
+[MMU] Instantiating TLB Hierarchy
+[TLB] Number of Levels: 2
+[MMU] Instantiating TLB: mmu_TLB_L1_1  Core ID: 3  Stores: Data  Number of entries: 64  Associativity: 4  TLB Type: Data  Allocate on miss: true  Number of prefetchers: 0  Access latency: 0ns  Page sizes: 1
+[MMU] Instantiating TLB: mmu_TLB_L1_2  Core ID: 3  Stores: Data  Number of entries: 64  Associativity: 4  TLB Type: Data  Allocate on miss: true  Number of prefetchers: 0  Access latency: 0ns  Page sizes: 1
+[MMU] Instantiating TLB: mmu_TLB_L1_3  Core ID: 3  Stores: Instruction  Number of entries: 64  Associativity: 4  TLB Type: Instruction  Allocate on miss: true  Number of prefetchers: 0  Access latency: 0ns  Page sizes: 2
+[MMU] Instantiating TLB: mmu_TLB_L2_1  Core ID: 3  Stores: Unified  Number of entries: 2048  Associativity: 8  TLB Type: Unified  Allocate on miss: false  Number of prefetchers: 0  Access latency: 5ns  Page sizes: 2
+
+[Memory Hierarchy] Initializing cache 
+[Memory Hierarchy] Creating L1-I cache with 64 sets, 4-way associative, 256B blocksize
+[Memory Hierarchy] Initializing cache 
+[Memory Hierarchy] Creating L1-D cache with 64 sets, 4-way associative, 256B blocksize
+[Memory Hierarchy] Initializing cache 
+[Memory Hierarchy] Memory Hierarchy Initialized
+
+[EXCEPTION_HANDLER_FACTORY] Creating sniper-space handler of type: default for core 3
+
+[EXCEPTION_HANDLER] Initializing Exception Handler (sniper-space MimicOS)
+[EXCEPTION_HANDLER] Initialised from the Core constructor
+
+[Memory Manager] Initializing Memory Hierarchy for core 4
+[MMU_BASE] Initializing MMU Base for core 4 with name: mmu
+[MMU_BASE] Count page fault latency enabled: No
+
+[MMU] Initializing MMU for core 4
+[MMU] Page walk caches are enabled
+[MMU] Instantiating TLB Hierarchy
+[TLB] Number of Levels: 2
+[MMU] Instantiating TLB: mmu_TLB_L1_1  Core ID: 4  Stores: Data  Number of entries: 64  Associativity: 4  TLB Type: Data  Allocate on miss: true  Number of prefetchers: 0  Access latency: 0ns  Page sizes: 1
+[MMU] Instantiating TLB: mmu_TLB_L1_2  Core ID: 4  Stores: Data  Number of entries: 64  Associativity: 4  TLB Type: Data  Allocate on miss: true  Number of prefetchers: 0  Access latency: 0ns  Page sizes: 1
+[MMU] Instantiating TLB: mmu_TLB_L1_3  Core ID: 4  Stores: Instruction  Number of entries: 64  Associativity: 4  TLB Type: Instruction  Allocate on miss: true  Number of prefetchers: 0  Access latency: 0ns  Page sizes: 2
+[MMU] Instantiating TLB: mmu_TLB_L2_1  Core ID: 4  Stores: Unified  Number of entries: 2048  Associativity: 8  TLB Type: Unified  Allocate on miss: false  Number of prefetchers: 0  Access latency: 5ns  Page sizes: 2
+
+[Memory Hierarchy] Initializing cache 
+[Memory Hierarchy] Creating L1-I cache with 64 sets, 4-way associative, 256B blocksize
+[Memory Hierarchy] Initializing cache 
+[Memory Hierarchy] Creating L1-D cache with 64 sets, 4-way associative, 256B blocksize
+[Memory Hierarchy] Initializing cache 
+[Memory Hierarchy] Memory Hierarchy Initialized
+
+[EXCEPTION_HANDLER_FACTORY] Creating sniper-space handler of type: default for core 4
+
+[EXCEPTION_HANDLER] Initializing Exception Handler (sniper-space MimicOS)
+[EXCEPTION_HANDLER] Initialised from the Core constructor
+
+[Memory Manager] Initializing Memory Hierarchy for core 5
+[MMU_BASE] Initializing MMU Base for core 5 with name: mmu
+[MMU_BASE] Count page fault latency enabled: No
+
+[MMU] Initializing MMU for core 5
+[MMU] Page walk caches are enabled
+[MMU] Instantiating TLB Hierarchy
+[TLB] Number of Levels: 2
+[MMU] Instantiating TLB: mmu_TLB_L1_1  Core ID: 5  Stores: Data  Number of entries: 64  Associativity: 4  TLB Type: Data  Allocate on miss: true  Number of prefetchers: 0  Access latency: 0ns  Page sizes: 1
+[MMU] Instantiating TLB: mmu_TLB_L1_2  Core ID: 5  Stores: Data  Number of entries: 64  Associativity: 4  TLB Type: Data  Allocate on miss: true  Number of prefetchers: 0  Access latency: 0ns  Page sizes: 1
+[MMU] Instantiating TLB: mmu_TLB_L1_3  Core ID: 5  Stores: Instruction  Number of entries: 64  Associativity: 4  TLB Type: Instruction  Allocate on miss: true  Number of prefetchers: 0  Access latency: 0ns  Page sizes: 2
+[MMU] Instantiating TLB: mmu_TLB_L2_1  Core ID: 5  Stores: Unified  Number of entries: 2048  Associativity: 8  TLB Type: Unified  Allocate on miss: false  Number of prefetchers: 0  Access latency: 5ns  Page sizes: 2
+
+[Memory Hierarchy] Initializing cache 
+[Memory Hierarchy] Creating L1-I cache with 64 sets, 4-way associative, 256B blocksize
+[Memory Hierarchy] Initializing cache 
+[Memory Hierarchy] Creating L1-D cache with 64 sets, 4-way associative, 256B blocksize
+[Memory Hierarchy] Initializing cache 
+[Memory Hierarchy] Memory Hierarchy Initialized
+
+[EXCEPTION_HANDLER_FACTORY] Creating sniper-space handler of type: default for core 5
+
+[EXCEPTION_HANDLER] Initializing Exception Handler (sniper-space MimicOS)
+[EXCEPTION_HANDLER] Initialised from the Core constructor
+
+[Memory Manager] Initializing Memory Hierarchy for core 6
+[MMU_BASE] Initializing MMU Base for core 6 with name: mmu
+[MMU_BASE] Count page fault latency enabled: No
+
+[MMU] Initializing MMU for core 6
+[MMU] Page walk caches are enabled
+[MMU] Instantiating TLB Hierarchy
+[TLB] Number of Levels: 2
+[MMU] Instantiating TLB: mmu_TLB_L1_1  Core ID: 6  Stores: Data  Number of entries: 64  Associativity: 4  TLB Type: Data  Allocate on miss: true  Number of prefetchers: 0  Access latency: 0ns  Page sizes: 1
+[MMU] Instantiating TLB: mmu_TLB_L1_2  Core ID: 6  Stores: Data  Number of entries: 64  Associativity: 4  TLB Type: Data  Allocate on miss: true  Number of prefetchers: 0  Access latency: 0ns  Page sizes: 1
+[MMU] Instantiating TLB: mmu_TLB_L1_3  Core ID: 6  Stores: Instruction  Number of entries: 64  Associativity: 4  TLB Type: Instruction  Allocate on miss: true  Number of prefetchers: 0  Access latency: 0ns  Page sizes: 2
+[MMU] Instantiating TLB: mmu_TLB_L2_1  Core ID: 6  Stores: Unified  Number of entries: 2048  Associativity: 8  TLB Type: Unified  Allocate on miss: false  Number of prefetchers: 0  Access latency: 5ns  Page sizes: 2
+
+[Memory Hierarchy] Initializing cache 
+[Memory Hierarchy] Creating L1-I cache with 64 sets, 4-way associative, 256B blocksize
+[Memory Hierarchy] Initializing cache 
+[Memory Hierarchy] Creating L1-D cache with 64 sets, 4-way associative, 256B blocksize
+[Memory Hierarchy] Initializing cache 
+[Memory Hierarchy] Memory Hierarchy Initialized
+
+[EXCEPTION_HANDLER_FACTORY] Creating sniper-space handler of type: default for core 6
+
+[EXCEPTION_HANDLER] Initializing Exception Handler (sniper-space MimicOS)
+[EXCEPTION_HANDLER] Initialised from the Core constructor
+
+[Memory Manager] Initializing Memory Hierarchy for core 7
+[MMU_BASE] Initializing MMU Base for core 7 with name: mmu
+[MMU_BASE] Count page fault latency enabled: No
+
+[MMU] Initializing MMU for core 7
+[MMU] Page walk caches are enabled
+[MMU] Instantiating TLB Hierarchy
+[TLB] Number of Levels: 2
+[MMU] Instantiating TLB: mmu_TLB_L1_1  Core ID: 7  Stores: Data  Number of entries: 64  Associativity: 4  TLB Type: Data  Allocate on miss: true  Number of prefetchers: 0  Access latency: 0ns  Page sizes: 1
+[MMU] Instantiating TLB: mmu_TLB_L1_2  Core ID: 7  Stores: Data  Number of entries: 64  Associativity: 4  TLB Type: Data  Allocate on miss: true  Number of prefetchers: 0  Access latency: 0ns  Page sizes: 1
+[MMU] Instantiating TLB: mmu_TLB_L1_3  Core ID: 7  Stores: Instruction  Number of entries: 64  Associativity: 4  TLB Type: Instruction  Allocate on miss: true  Number of prefetchers: 0  Access latency: 0ns  Page sizes: 2
+[MMU] Instantiating TLB: mmu_TLB_L2_1  Core ID: 7  Stores: Unified  Number of entries: 2048  Associativity: 8  TLB Type: Unified  Allocate on miss: false  Number of prefetchers: 0  Access latency: 5ns  Page sizes: 2
+
+[Memory Hierarchy] Initializing cache 
+[Memory Hierarchy] Creating L1-I cache with 64 sets, 4-way associative, 256B blocksize
+[Memory Hierarchy] Initializing cache 
+[Memory Hierarchy] Creating L1-D cache with 64 sets, 4-way associative, 256B blocksize
+[Memory Hierarchy] Initializing cache 
+[Memory Hierarchy] Memory Hierarchy Initialized
+
+[EXCEPTION_HANDLER_FACTORY] Creating sniper-space handler of type: default for core 7
+
+[EXCEPTION_HANDLER] Initializing Exception Handler (sniper-space MimicOS)
+[EXCEPTION_HANDLER] Initialised from the Core constructor
+
+[Memory Manager] Initializing Memory Hierarchy for core 8
+[MMU_BASE] Initializing MMU Base for core 8 with name: mmu
+[MMU_BASE] Count page fault latency enabled: No
+
+[MMU] Initializing MMU for core 8
+[MMU] Page walk caches are enabled
+[MMU] Instantiating TLB Hierarchy
+[TLB] Number of Levels: 2
+[MMU] Instantiating TLB: mmu_TLB_L1_1  Core ID: 8  Stores: Data  Number of entries: 64  Associativity: 4  TLB Type: Data  Allocate on miss: true  Number of prefetchers: 0  Access latency: 0ns  Page sizes: 1
+[MMU] Instantiating TLB: mmu_TLB_L1_2  Core ID: 8  Stores: Data  Number of entries: 64  Associativity: 4  TLB Type: Data  Allocate on miss: true  Number of prefetchers: 0  Access latency: 0ns  Page sizes: 1
+[MMU] Instantiating TLB: mmu_TLB_L1_3  Core ID: 8  Stores: Instruction  Number of entries: 64  Associativity: 4  TLB Type: Instruction  Allocate on miss: true  Number of prefetchers: 0  Access latency: 0ns  Page sizes: 2
+[MMU] Instantiating TLB: mmu_TLB_L2_1  Core ID: 8  Stores: Unified  Number of entries: 2048  Associativity: 8  TLB Type: Unified  Allocate on miss: false  Number of prefetchers: 0  Access latency: 5ns  Page sizes: 2
+
+[Memory Hierarchy] Initializing cache 
+[Memory Hierarchy] Creating L1-I cache with 64 sets, 4-way associative, 256B blocksize
+[Memory Hierarchy] Initializing cache 
+[Memory Hierarchy] Creating L1-D cache with 64 sets, 4-way associative, 256B blocksize
+[Memory Hierarchy] Initializing cache 
+[Memory Hierarchy] Memory Hierarchy Initialized
+
+[EXCEPTION_HANDLER_FACTORY] Creating sniper-space handler of type: default for core 8
+
+[EXCEPTION_HANDLER] Initializing Exception Handler (sniper-space MimicOS)
+[EXCEPTION_HANDLER] Initialised from the Core constructor
+
+[Memory Manager] Initializing Memory Hierarchy for core 9
+[MMU_BASE] Initializing MMU Base for core 9 with name: mmu
+[MMU_BASE] Count page fault latency enabled: No
+
+[MMU] Initializing MMU for core 9
+[MMU] Page walk caches are enabled
+[MMU] Instantiating TLB Hierarchy
+[TLB] Number of Levels: 2
+[MMU] Instantiating TLB: mmu_TLB_L1_1  Core ID: 9  Stores: Data  Number of entries: 64  Associativity: 4  TLB Type: Data  Allocate on miss: true  Number of prefetchers: 0  Access latency: 0ns  Page sizes: 1
+[MMU] Instantiating TLB: mmu_TLB_L1_2  Core ID: 9  Stores: Data  Number of entries: 64  Associativity: 4  TLB Type: Data  Allocate on miss: true  Number of prefetchers: 0  Access latency: 0ns  Page sizes: 1
+[MMU] Instantiating TLB: mmu_TLB_L1_3  Core ID: 9  Stores: Instruction  Number of entries: 64  Associativity: 4  TLB Type: Instruction  Allocate on miss: true  Number of prefetchers: 0  Access latency: 0ns  Page sizes: 2
+[MMU] Instantiating TLB: mmu_TLB_L2_1  Core ID: 9  Stores: Unified  Number of entries: 2048  Associativity: 8  TLB Type: Unified  Allocate on miss: false  Number of prefetchers: 0  Access latency: 5ns  Page sizes: 2
+
+[Memory Hierarchy] Initializing cache 
+[Memory Hierarchy] Creating L1-I cache with 64 sets, 4-way associative, 256B blocksize
+[Memory Hierarchy] Initializing cache 
+[Memory Hierarchy] Creating L1-D cache with 64 sets, 4-way associative, 256B blocksize
+[Memory Hierarchy] Initializing cache 
+[Memory Hierarchy] Memory Hierarchy Initialized
+
+[EXCEPTION_HANDLER_FACTORY] Creating sniper-space handler of type: default for core 9
+
+[EXCEPTION_HANDLER] Initializing Exception Handler (sniper-space MimicOS)
+[EXCEPTION_HANDLER] Initialised from the Core constructor
+
+[Memory Manager] Initializing Memory Hierarchy for core 10
+[MMU_BASE] Initializing MMU Base for core 10 with name: mmu
+[MMU_BASE] Count page fault latency enabled: No
+
+[MMU] Initializing MMU for core 10
+[MMU] Page walk caches are enabled
+[MMU] Instantiating TLB Hierarchy
+[TLB] Number of Levels: 2
+[MMU] Instantiating TLB: mmu_TLB_L1_1  Core ID: 10  Stores: Data  Number of entries: 64  Associativity: 4  TLB Type: Data  Allocate on miss: true  Number of prefetchers: 0  Access latency: 0ns  Page sizes: 1
+[MMU] Instantiating TLB: mmu_TLB_L1_2  Core ID: 10  Stores: Data  Number of entries: 64  Associativity: 4  TLB Type: Data  Allocate on miss: true  Number of prefetchers: 0  Access latency: 0ns  Page sizes: 1
+[MMU] Instantiating TLB: mmu_TLB_L1_3  Core ID: 10  Stores: Instruction  Number of entries: 64  Associativity: 4  TLB Type: Instruction  Allocate on miss: true  Number of prefetchers: 0  Access latency: 0ns  Page sizes: 2
+[MMU] Instantiating TLB: mmu_TLB_L2_1  Core ID: 10  Stores: Unified  Number of entries: 2048  Associativity: 8  TLB Type: Unified  Allocate on miss: false  Number of prefetchers: 0  Access latency: 5ns  Page sizes: 2
+
+[Memory Hierarchy] Initializing cache 
+[Memory Hierarchy] Creating L1-I cache with 64 sets, 4-way associative, 256B blocksize
+[Memory Hierarchy] Initializing cache 
+[Memory Hierarchy] Creating L1-D cache with 64 sets, 4-way associative, 256B blocksize
+[Memory Hierarchy] Initializing cache 
+[Memory Hierarchy] Memory Hierarchy Initialized
+
+[EXCEPTION_HANDLER_FACTORY] Creating sniper-space handler of type: default for core 10
+
+[EXCEPTION_HANDLER] Initializing Exception Handler (sniper-space MimicOS)
+[EXCEPTION_HANDLER] Initialised from the Core constructor
+
+[Memory Manager] Initializing Memory Hierarchy for core 11
+[MMU_BASE] Initializing MMU Base for core 11 with name: mmu
+[MMU_BASE] Count page fault latency enabled: No
+
+[MMU] Initializing MMU for core 11
+[MMU] Page walk caches are enabled
+[MMU] Instantiating TLB Hierarchy
+[TLB] Number of Levels: 2
+[MMU] Instantiating TLB: mmu_TLB_L1_1  Core ID: 11  Stores: Data  Number of entries: 64  Associativity: 4  TLB Type: Data  Allocate on miss: true  Number of prefetchers: 0  Access latency: 0ns  Page sizes: 1
+[MMU] Instantiating TLB: mmu_TLB_L1_2  Core ID: 11  Stores: Data  Number of entries: 64  Associativity: 4  TLB Type: Data  Allocate on miss: true  Number of prefetchers: 0  Access latency: 0ns  Page sizes: 1
+[MMU] Instantiating TLB: mmu_TLB_L1_3  Core ID: 11  Stores: Instruction  Number of entries: 64  Associativity: 4  TLB Type: Instruction  Allocate on miss: true  Number of prefetchers: 0  Access latency: 0ns  Page sizes: 2
+[MMU] Instantiating TLB: mmu_TLB_L2_1  Core ID: 11  Stores: Unified  Number of entries: 2048  Associativity: 8  TLB Type: Unified  Allocate on miss: false  Number of prefetchers: 0  Access latency: 5ns  Page sizes: 2
+
+[Memory Hierarchy] Initializing cache 
+[Memory Hierarchy] Creating L1-I cache with 64 sets, 4-way associative, 256B blocksize
+[Memory Hierarchy] Initializing cache 
+[Memory Hierarchy] Creating L1-D cache with 64 sets, 4-way associative, 256B blocksize
+[Memory Hierarchy] Initializing cache 
+[Memory Hierarchy] Memory Hierarchy Initialized
+
+[EXCEPTION_HANDLER_FACTORY] Creating sniper-space handler of type: default for core 11
+
+[EXCEPTION_HANDLER] Initializing Exception Handler (sniper-space MimicOS)
+[EXCEPTION_HANDLER] Initialised from the Core constructor
+[MimicOS] Initializing MimicOS: mimicos_host
+[MimicOS] [createAllocator] Creating physical memory allocator for mimicos_host - allocator_name = reserve_thp  - allocator_type = reserve_thp
+[MimicOS] Kernel size in MB: 32768
+[MimicOS] Reservation-based THP Allocator
+[MimicOS] ReserveTHP: threshold_for_promotion = 0
+[Buddy] Memory Size: 131072
+[Buddy] 4KB pages in memory: 25165824
+[Buddy] 2MB pages in memory: 49152
+[Buddy] 1GB pages in memory: 96
+[MimicOS] Memory Allocator of type reserve_thp created.
+[MimicOS] Using ratio-based fragmentation with target ratio 0
+[BUDDY] Fragmenting memory to achieve target fragmentation: 0
+[BUDDY] Initialized memory with final fragmentation: 0
+[BUDDY] Free pages: 25165824
+[BUDDY] Free pages in (MB): 98304
+[HUGETLBFS] Service disabled in configuration
+[MimicOS] Initialization complete
+Creating new application with app id = 0
+[Radix Page Table] Creating 4-level Radix table with name: radix_4levelfor app id: 0
+[Radix Page Table] Page sizes: 2
+[Page Table] Page size: 12
+[Page Table] Page size: 21
+[Radix Page Table] Levels: 4
+[Radix Page Table] Frame size: 512 entries
+[Radix Page Table] createRadixPageTable created new PageTableRadix object with name: radix_4level and type: radix
+[TraceManager] Setting trace readers for the first application
+[SNIPER] --------------------------------------------------------------------------------
+[SNIPER] Sniper using SIFT/trace-driven frontend
+[SNIPER] Running pre-ROI region in  CACHE_ONLY mode
+[SNIPER] Running application ROI in DETAILED mode
+[SNIPER] Running post-ROI region in FAST_FORWARD mode
+[SNIPER] --------------------------------------------------------------------------------
+[TraceThread] Thread 0 (app 0) started on host CPU 0
+initRecorderBase()
+Shall we track VMAs? 0
+Creating new application with app id = 0
+[TraceThread] Thread 1 (app 0) started on host CPU 0
+Creating new application with app id = 0
+[TraceThread] Thread 2 (app 0) started on host CPU 0
+Creating new application with app id = 0
+[TraceThread] Thread 3 (app 0) started on host CPU 0
+Creating new application with app id = 0
+[TraceThread] Thread 4 (app 0) started on host CPU 0
+Creating new application with app id = 0
+[TraceThread] Thread 5 (app 0) started on host CPU 0
+Creating new application with app id = 0
+[TraceThread] Thread 6 (app 0) started on host CPU 0
+Creating new application with app id = 0
+[TraceThread] Thread 7 (app 0) started on host CPU 0
+Creating new application with app id = 0
+[TraceThread] Thread 8 (app 0) started on host CPU 0
+Creating new application with app id = 0
+[TraceThread] Thread 9 (app 0) started on host CPU 0
+Creating new application with app id = 0
+[TraceThread] Thread 10 (app 0) started on host CPU 0
+Creating new application with app id = 0
+[TraceThread] Thread 11 (app 0) started on host CPU 0
+Creating new application with app id = 0
+[TraceThread] Thread 12 (app 0) started on host CPU 0
+0          [   83]  [ 0]  [trace_thread.cc     : 675]  *ERROR* We cannot execute instructions while not on a core
+Traceback (most recent call last):
+  File "/opt/sniper/tools/dumpstats.py", line 172, in <module>
+    results = sniper_lib.get_results(jobid, resultsdir, partial = partial)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/sniper/tools/sniper_lib.py", line 47, in get_results
+    results = parse_results_from_dir(resultsdir, partial = partial, metrics = metrics)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/sniper/tools/sniper_lib.py", line 179, in parse_results_from_dir
+    results += stats.parse_stats((k1, k2), ncores, metrics = metrics)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/sniper/tools/sniper_stats.py", line 8, in parse_stats
+    v1 = self.read_snapshot(k1, metrics = metrics)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/sniper/tools/sniper_stats_sqlite.py", line 44, in read_snapshot
+    raise ValueError('Invalid prefix %s' % prefix)
+ValueError: Invalid prefix roi-begin
+[SNIPER] ERROR: Process killed by SIGABRT (signal 6)
+[SNIPER] SIGABRT indicates the process aborted (assertion failure or abort() call).
+[SNIPER] End
+[SNIPER] Elapsed time: 8.11 seconds
+[SNIPER] Generating statistics
+[SNIPER] Organizing output files

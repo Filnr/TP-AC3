@@ -1,0 +1,9 @@
+[11:15:46] matvecsplit / a64fx32 / test / rep 1 -> results/matvecsplit/a64fx32/test_20261012_111546_rep1
+[11:33:47] simulacao ok em 1081 s; resultado identico ao nativo: # result = 4.268738964000000e+10, reference = 4.268738964000000e+10, error range = [4.268738963999995e+10,4.268738964000005e+10]
+           [SNIPER] Simulated 152.9M instructions, 42.8M cycles, 3.57 IPC
+           [SNIPER] Simulation speed 205.6 KIPS (6.4 KIPS / target core - 155623.0ns/instr)
+[11:33:47] McPAT em results/matvecsplit/a64fx32/test_20261012_111546_rep1 (timeout 3600 s)
+[11:33:56] McPAT ok em 9 s -> results/matvecsplit/a64fx32/test_20261012_111546_rep1/mcpat/mcpat_power.json
+[summary] tempo simulado 0.004287 s | 1.510e+08 instr | IPC agregado 0.500 | miss L2 72.06%
+[summary] McPAT: logica 62.23 W (est. 11.95 + din. 50.28) | L2 1.23 W (est. 0.99 + din. 0.23)
+[11:33:57] concluido em 1091 s -> results/matvecsplit/a64fx32/test_20261012_111546_rep1/summary.json

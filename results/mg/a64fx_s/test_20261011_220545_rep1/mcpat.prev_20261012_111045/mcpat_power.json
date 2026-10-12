@@ -1,0 +1,69 @@
+{
+  "mcpat_binary": "/opt/sniper/tools/../mcpat/mcpat-1.0.cache",
+  "mcpat_output_bytes": 129854,
+  "ncores": 12,
+  "power_W": {
+    "dynamic": {
+      "core-alu": 1.0750906,
+      "core-core": 11.4248387,
+      "core-fp": 1.85701,
+      "core-ifetch": 1.6327375100000001,
+      "core-int": 2.038484,
+      "core-mem": 1.2504428,
+      "dcache": 44.61533,
+      "icache": 1.48407,
+      "l2": 1.11902,
+      "other": 0.05311332126107968
+    },
+    "peak": {
+      "core-core": 13.8268571648,
+      "dcache": 140.43164828000002,
+      "dram": 4.305136931261079,
+      "icache": 160.32235344000003,
+      "other": 11.763241115199946
+    },
+    "static": {
+      "core-core": 0.0990564648,
+      "core-fp": 0.118920024,
+      "core-ifetch": 0.14839310196,
+      "core-int": 0.09857020799999999,
+      "core-other": 0.4359045806400008,
+      "dcache": 2.07804828,
+      "dram": 4.252,
+      "icache": 1.39915344,
+      "l2": 0.9941999,
+      "other": 0.0828540006
+    },
+    "total": {
+      "core-alu": 1.124375704,
+      "core-core": 11.523895164799999,
+      "core-fp": 1.975930024,
+      "core-ifetch": 1.78113061196,
+      "core-int": 2.137054208,
+      "core-mem": 1.2753836096,
+      "dcache": 46.693378280000005,
+      "dram": 4.305136931261079,
+      "icache": 2.88322344,
+      "l2": 2.1132199,
+      "other": 0.44450905763999954
+    }
+  },
+  "sniper_results_dir": "/work/results/mg/a64fx_s/test_20261011_220545_rep1/sniper/simulation",
+  "stat_aliases_applied": [
+    "L1-I.loads",
+    "L1-I.stores",
+    "L1-I.load-misses",
+    "L1-I.store-misses",
+    "L1-D.loads",
+    "L1-D.stores",
+    "L1-D.load-misses",
+    "L1-D.store-misses",
+    "L2.loads",
+    "L2.stores",
+    "L2.load-misses",
+    "L2.store-misses",
+    "itlb.miss",
+    "dtlb.miss"
+  ],
+  "time_s": 0.00052496176352
+}

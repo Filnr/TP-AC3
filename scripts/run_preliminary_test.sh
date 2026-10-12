@@ -21,7 +21,12 @@ docker run --rm \
     set -e
     cd /opt/sniper/test/fft
     make
-    ../../run-sniper -v -n 1 -c gainestown --roi -- ./fft -p 1 2>&1 | tee /out/run.log
+    # A partir da versao 8.x, o Sniper exige explicitamente um esquema de
+    # traducao de enderecos (MMU/page table), que por sua vez define
+    # general/enable_userspace_mimicos. Sem isso a simulacao aborta com
+    # "Configuration value general/enable_userspace_mimicos not found".
+    # Ver README.md oficial do Sniper, secao de smoke test pos-build.
+    ../../run-sniper -v -n 1 -c gainestown -c address_translation_schemes/baseline --roi -- ./fft -p 1 2>&1 | tee /out/run.log
     cp sim.out /out/sim.out 2>/dev/null || true
     cp -r sim.stats.sqlite3 /out/ 2>/dev/null || true
   '

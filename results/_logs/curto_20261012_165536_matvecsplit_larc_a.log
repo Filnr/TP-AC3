@@ -1,0 +1,9 @@
+[16:55:36] matvecsplit / larc_a / test / rep 1 -> results/matvecsplit/larc_a/test_20261012_165536_rep1
+[17:02:53] simulacao ok em 433 s; resultado identico ao nativo: # result = 4.268738964000000e+10, reference = 4.268738964000000e+10, error range = [4.268738963999995e+10,4.268738964000005e+10]
+           [SNIPER] Simulated 119.0M instructions, 24.0M cycles, 4.95 IPC
+           [SNIPER] Simulation speed 404.8 KIPS (12.7 KIPS / target core - 79044.5ns/instr)
+[17:02:53] McPAT em results/matvecsplit/larc_a/test_20261012_165536_rep1 (timeout 3600 s)
+[17:03:12] McPAT ok em 19 s -> results/matvecsplit/larc_a/test_20261012_165536_rep1/mcpat/mcpat_power.json
+[summary] tempo simulado 0.001276 s | 1.181e+08 instr | IPC agregado 1.315 | miss L2 0.02%
+[summary] McPAT: logica 144.89 W (est. 12.24 + din. 132.65) | L2 33.78 W (est. 20.87 + din. 12.90)
+[17:03:13] concluido em 457 s -> results/matvecsplit/larc_a/test_20261012_165536_rep1/summary.json

@@ -1,0 +1,9 @@
+[11:09:49] xsbench / larc_c / test / rep 1 -> results/xsbench/larc_c/test_20261012_110949_rep1
+[11:39:31] simulacao ok em 1780 s; resultado identico ao nativo: Verification checksum: 299541 (WARNING - INVALID CHECKSUM!)
+           [SNIPER] Simulated 117.4M instructions, 2597.7M cycles, 0.05 IPC
+           [SNIPER] Simulation speed 557.8 KIPS (17.4 KIPS / target core - 57372.7ns/instr)
+[11:39:31] McPAT em results/xsbench/larc_c/test_20261012_110949_rep1 (timeout 3600 s)
+[11:39:44] McPAT ok em 13 s -> results/xsbench/larc_c/test_20261012_110949_rep1/mcpat/mcpat_power.json
+[summary] tempo simulado 0.001946 s | 1.173e+08 instr | IPC agregado 0.856 | miss L2 0.03%
+[summary] McPAT: logica 86.50 W (est. 12.20 + din. 74.30) | L2 48.81 W (est. 10.80 + din. 38.01)
+[11:39:45] concluido em 1796 s -> results/xsbench/larc_c/test_20261012_110949_rep1/summary.json

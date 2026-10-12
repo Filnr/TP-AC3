@@ -1,0 +1,4 @@
+0          [  220]  [  ]  [memory_manager.cc   : 391]  *ERROR* Tag directories may only be at 'master' node of shared caches
+
+Make sure perf_model/dram_directory/interleaving is a multiple of perf_model/l2_cache/shared_cores
+

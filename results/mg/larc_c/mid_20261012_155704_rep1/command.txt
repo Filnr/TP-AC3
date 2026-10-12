@@ -1,0 +1,8 @@
+data:      2026-10-12T15:57:04-03:00
+workload:  mg   cenario: larc_c   size: mid   rep: 1
+imagem:    larc-thermal-sniper:latest (sha256:173130a4f97b1559fb9bab732472a9b7c0790c37673cfa142b6358543e46d2a2)
+git:       7009177467085722db9dfb0b4de9dcafc54c9dba (dirty: 25 arquivos)
+host:      Linux 7.2.7-arch1-1 x86_64, 16 threads, 13.3 GiB
+timeout:   7200 s
+nativo:    OMP_NUM_THREADS=32 GFORTRAN_UNBUFFERED_ALL=1 /work/benchmarks/bin-m3/mg.W.x
+sniper:    OMP_NUM_THREADS=32 GFORTRAN_UNBUFFERED_ALL=1 /opt/sniper/run-sniper -n 32 -c larc_c -c power --roi -d /work/results/mg/larc_c/mid_20261012_155704_rep1/sniper -- /work/benchmarks/bin-m3/mg.W.x

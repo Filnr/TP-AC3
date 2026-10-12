@@ -1,0 +1,32 @@
+diff --git a/openmp-threading/Main.c b/openmp-threading/Main.c
+index 489d3e7..8d11dcc 100644
+--- a/openmp-threading/Main.c
++++ b/openmp-threading/Main.c
+@@ -1,4 +1,7 @@
+ #include "XSbench_header.h"
++#ifdef SNIPER_ROI
++#include "sim_api.h"
++#endif
+ 
+ #ifdef MPI
+ #include<mpi.h>
+@@ -74,6 +77,9 @@ int main( int argc, char* argv[] )
+ 	}
+ 
+ 	// Start Simulation Timer
++	#ifdef SNIPER_ROI
++	SimRoiStart();
++	#endif
+ 	omp_start = get_time();
+ 
+ 	// Run simulation
+@@ -100,6 +106,9 @@ int main( int argc, char* argv[] )
+ 
+ 	// End Simulation Timer
+ 	omp_end = get_time();
++	#ifdef SNIPER_ROI
++	SimRoiEnd();
++	#endif
+ 
+ 	// =====================================================================
+ 	// Output Results & Finalize

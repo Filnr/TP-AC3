@@ -1,0 +1,68 @@
+{'cmdline': ['/opt/sniper/run-sniper',
+             '-n',
+             '32',
+             '-c',
+             'a64fx32',
+             '-c',
+             'power',
+             '--roi',
+             '-d',
+             '/work/results/matvecsplit/a64fx32/test_20261012_111546_rep1/sniper',
+             '--',
+             '/work/benchmarks/bin-m3/matvecsplit'],
+ 'git_revision': '56505e42fd98bca863fac181e769bd3c98d2bb33',
+ 'host': '787a58f4438c',
+ 'pin_version': 'unknown',
+ 'rusage': (486.091541,
+            114.28999,
+            411528,
+            0,
+            0,
+            0,
+            92542,
+            19,
+            0,
+            2744,
+            1680,
+            0,
+            0,
+            0,
+            21578300,
+            1534690),
+ 'snipercmd': ['bash',
+               '-c',
+               '/opt/sniper/lib/sniper -c /opt/sniper/config/base.cfg '
+               '--general/total_cores=32 '
+               '--general/output_dir=/work/results/matvecsplit/a64fx32/test_20261012_111546_rep1/sniper '
+               '--config=/opt/sniper/config/common_configs/base_system_sniperspace.cfg '
+               '--config=/opt/sniper/config/mmu_configs/mmu_base.cfg '
+               '--config=/opt/sniper/config/pagetable_configs/4_level_radix.cfg '
+               '--config=/opt/sniper/config/pagetable_configs/range_table.cfg '
+               '--config=/opt/sniper/config/physical_memory_allocators/reserve_thp.cfg '
+               '--config=/opt/sniper/config/larc_base.cfg '
+               '--config=/opt/sniper/config/a64fx32.cfg '
+               '--config=/opt/sniper/config/power.cfg -g --general/magic=true '
+               '-g --traceinput/stop_with_first_app=true -g '
+               '--traceinput/restart_apps=false -g '
+               '--traceinput/stop_with_first_app=false -g '
+               '--traceinput/enabled=true -g '
+               '--traceinput/emulate_syscalls=true -g --traceinput/num_apps=1 '
+               '-g --traceinput/trace_prefix=/tmp/tmpsccnrye5/run_benchmarks'],
+ 't_elapsed': 1080.8914542198181,
+ 't_start': 1791814546.463612,
+ 'tracecmds': [['/opt/sniper/record-trace',
+                '-o',
+                '/tmp/tmpsccnrye5/run_benchmarks',
+                '--roi',
+                '-e',
+                '1',
+                '-s',
+                '0',
+                '-r',
+                '1',
+                '--follow',
+                '--routine-tracing',
+                '--',
+                '/work/benchmarks/bin-m3/matvecsplit']],
+ 'user': None,
+ 'vmem': 5146062848}

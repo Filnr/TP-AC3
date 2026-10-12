@@ -1,0 +1,11 @@
+data:      2026-10-12T11:15:46-03:00
+workload:  matvecsplit   cenario: a64fx32   size: test   rep: 1
+imagem:    larc-thermal-sniper:latest (sha256:173130a4f97b1559fb9bab732472a9b7c0790c37673cfa142b6358543e46d2a2)
+git:       7009177467085722db9dfb0b4de9dcafc54c9dba (dirty: 25 arquivos)
+host:      Linux 7.2.7-arch1-1 x86_64, 16 threads, 13.3 GiB
+timeout:   3600 s
+nativo:    OMP_NUM_THREADS=32 GFORTRAN_UNBUFFERED_ALL=1 /work/benchmarks/bin-m3/matvecsplit
+sniper:    OMP_NUM_THREADS=32 GFORTRAN_UNBUFFERED_ALL=1 /opt/sniper/run-sniper -n 32 -c a64fx32 -c power --roi -d /work/results/matvecsplit/a64fx32/test_20261012_111546_rep1/sniper -- /work/benchmarks/bin-m3/matvecsplit
+native_rc: 0
+sniper_rc: 0
+sniper_wall_s: 1081

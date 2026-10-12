@@ -1,0 +1,9 @@
+[17:03:13] xsbench / a64fx32 / test / rep 1 -> results/xsbench/a64fx32/test_20261012_170313_rep1
+[17:29:27] simulacao ok em 1573 s; resultado identico ao nativo: Verification checksum: 299541 (WARNING - INVALID CHECKSUM!)
+           [SNIPER] Simulated 120.4M instructions, 2729.1M cycles, 0.04 IPC
+           [SNIPER] Simulation speed 311.9 KIPS (9.7 KIPS / target core - 102612.6ns/instr)
+[17:29:27] McPAT em results/xsbench/a64fx32/test_20261012_170313_rep1 (timeout 3600 s)
+[17:29:34] McPAT ok em 7 s -> results/xsbench/a64fx32/test_20261012_170313_rep1/mcpat/mcpat_power.json
+[summary] tempo simulado 0.005135 s | 1.203e+08 instr | IPC agregado 0.333 | miss L2 72.74%
+[summary] McPAT: logica 47.50 W (est. 11.95 + din. 35.56) | L2 4.81 W (est. 0.99 + din. 3.82)
+[17:29:35] concluido em 1582 s -> results/xsbench/a64fx32/test_20261012_170313_rep1/summary.json

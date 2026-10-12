@@ -1,0 +1,48 @@
+================================================================================
+                   __   __ ___________                 _                        
+                   \ \ / //  ___| ___ \               | |                       
+                    \ V / \ `--.| |_/ / ___ _ __   ___| |__                     
+                    /   \  `--. \ ___ \/ _ \ '_ \ / __| '_ \                    
+                   / /^\ \/\__/ / |_/ /  __/ | | | (__| | | |                   
+                   \/   \/\____/\____/ \___|_| |_|\___|_| |_|                   
+
+================================================================================
+                    Developed at Argonne National Laboratory
+                                   Version: 20
+================================================================================
+                                  INPUT SUMMARY
+================================================================================
+Simulation Method:            Event Based
+Grid Type:                    Unionized Grid
+Materials:                    12
+H-M Benchmark Size:           small
+Total Nuclides:               68
+Gridpoints (per Nuclide):     11,303
+Unionized Energy Gridpoints:  768,604
+Total XS Lookups:             100,000
+Threads:                      32
+Est. Memory Usage (MB):       241
+Binary File Mode:             Off
+================================================================================
+                         INITIALIZATION - DO NOT PROFILE
+================================================================================
+Intializing nuclide grids...
+Intializing unionized grid...
+Intializing material data...
+Intialization complete. Allocated 240 MB of data.
+
+================================================================================
+                                   SIMULATION
+================================================================================
+Beginning event based simulation...
+
+Simulation complete.
+================================================================================
+                                     RESULTS
+================================================================================
+Threads:     32
+Runtime:     0.011 seconds
+Lookups:     100,000
+Lookups/s:   9,049,415
+Verification checksum: 299541 (WARNING - INVALID CHECKSUM!)
+================================================================================

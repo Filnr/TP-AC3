@@ -1,0 +1,109 @@
+gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0
+GNU Fortran (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0
+make: Entering directory '/work/benchmarks'
+make -C /work/benchmarks/third_party/NPB3.4.4/NPB3.4-OMP clean >/dev/null
+make -C /work/benchmarks/third_party/NPB3.4.4/NPB3.4-OMP mg CLASS=S
+make[1]: Entering directory '/work/benchmarks/third_party/NPB3.4.4/NPB3.4-OMP'
+   ============================================
+   =      NAS PARALLEL BENCHMARKS 3.4         =
+   =      OpenMP Versions                     =
+   =      Fortran/C                           =
+   ============================================
+
+cd MG; make CLASS=S
+make[2]: Entering directory '/work/benchmarks/third_party/NPB3.4.4/NPB3.4-OMP/MG'
+make[3]: Entering directory '/work/benchmarks/third_party/NPB3.4.4/NPB3.4-OMP/sys'
+gcc  -o setparams setparams.c
+make[3]: Leaving directory '/work/benchmarks/third_party/NPB3.4.4/NPB3.4-OMP/sys'
+../sys/setparams mg S
+gfortran -c  -O3 -mavx2 -mfma -fopenmp mg_data.f90
+gfortran -c  -O3 -mavx2 -mfma -fopenmp mg.f90
+cd ../common; gfortran -c  -O3 -mavx2 -mfma -fopenmp print_results.f90
+cd ../common; gfortran -c  -O3 -mavx2 -mfma -fopenmp randi8.f90
+cd ../common; gfortran -c  -O3 -mavx2 -mfma -fopenmp timers.f90
+cd ../common; gcc -c  -O3 -mavx2 -mfma -fopenmp  -o wtime.o ../common/wtime.c
+gfortran -O3 -mavx2 -mfma -fopenmp -o ../bin/mg.S.x mg.o mg_data.o ../common/print_results.o ../common/randi8.o ../common/timers.o ../common/wtime.o /work/benchmarks/build/sim_roi_shim.o
+make[2]: Leaving directory '/work/benchmarks/third_party/NPB3.4.4/NPB3.4-OMP/MG'
+make[1]: Leaving directory '/work/benchmarks/third_party/NPB3.4.4/NPB3.4-OMP'
+cp /work/benchmarks/third_party/NPB3.4.4/NPB3.4-OMP/bin/mg.S.x bin-m3/mg.S.x
+make -C /work/benchmarks/third_party/NPB3.4.4/NPB3.4-OMP clean >/dev/null
+make -C /work/benchmarks/third_party/NPB3.4.4/NPB3.4-OMP mg CLASS=W
+make[1]: Entering directory '/work/benchmarks/third_party/NPB3.4.4/NPB3.4-OMP'
+   ============================================
+   =      NAS PARALLEL BENCHMARKS 3.4         =
+   =      OpenMP Versions                     =
+   =      Fortran/C                           =
+   ============================================
+
+cd MG; make CLASS=W
+make[2]: Entering directory '/work/benchmarks/third_party/NPB3.4.4/NPB3.4-OMP/MG'
+make[3]: Entering directory '/work/benchmarks/third_party/NPB3.4.4/NPB3.4-OMP/sys'
+gcc  -o setparams setparams.c
+make[3]: Leaving directory '/work/benchmarks/third_party/NPB3.4.4/NPB3.4-OMP/sys'
+../sys/setparams mg W
+gfortran -c  -O3 -mavx2 -mfma -fopenmp mg_data.f90
+gfortran -c  -O3 -mavx2 -mfma -fopenmp mg.f90
+cd ../common; gfortran -c  -O3 -mavx2 -mfma -fopenmp print_results.f90
+cd ../common; gfortran -c  -O3 -mavx2 -mfma -fopenmp randi8.f90
+cd ../common; gfortran -c  -O3 -mavx2 -mfma -fopenmp timers.f90
+cd ../common; gcc -c  -O3 -mavx2 -mfma -fopenmp  -o wtime.o ../common/wtime.c
+gfortran -O3 -mavx2 -mfma -fopenmp -o ../bin/mg.W.x mg.o mg_data.o ../common/print_results.o ../common/randi8.o ../common/timers.o ../common/wtime.o /work/benchmarks/build/sim_roi_shim.o
+make[2]: Leaving directory '/work/benchmarks/third_party/NPB3.4.4/NPB3.4-OMP/MG'
+make[1]: Leaving directory '/work/benchmarks/third_party/NPB3.4.4/NPB3.4-OMP'
+cp /work/benchmarks/third_party/NPB3.4.4/NPB3.4-OMP/bin/mg.W.x bin-m3/mg.W.x
+make -C /work/benchmarks/third_party/NPB3.4.4/NPB3.4-OMP clean >/dev/null
+make -C /work/benchmarks/third_party/NPB3.4.4/NPB3.4-OMP mg CLASS=B
+make[1]: Entering directory '/work/benchmarks/third_party/NPB3.4.4/NPB3.4-OMP'
+   ============================================
+   =      NAS PARALLEL BENCHMARKS 3.4         =
+   =      OpenMP Versions                     =
+   =      Fortran/C                           =
+   ============================================
+
+cd MG; make CLASS=B
+make[2]: Entering directory '/work/benchmarks/third_party/NPB3.4.4/NPB3.4-OMP/MG'
+make[3]: Entering directory '/work/benchmarks/third_party/NPB3.4.4/NPB3.4-OMP/sys'
+gcc  -o setparams setparams.c
+make[3]: Leaving directory '/work/benchmarks/third_party/NPB3.4.4/NPB3.4-OMP/sys'
+../sys/setparams mg B
+gfortran -c  -O3 -mavx2 -mfma -fopenmp mg_data.f90
+gfortran -c  -O3 -mavx2 -mfma -fopenmp mg.f90
+cd ../common; gfortran -c  -O3 -mavx2 -mfma -fopenmp print_results.f90
+cd ../common; gfortran -c  -O3 -mavx2 -mfma -fopenmp randi8.f90
+cd ../common; gfortran -c  -O3 -mavx2 -mfma -fopenmp timers.f90
+cd ../common; gcc -c  -O3 -mavx2 -mfma -fopenmp  -o wtime.o ../common/wtime.c
+gfortran -O3 -mavx2 -mfma -fopenmp -o ../bin/mg.B.x mg.o mg_data.o ../common/print_results.o ../common/randi8.o ../common/timers.o ../common/wtime.o /work/benchmarks/build/sim_roi_shim.o
+make[2]: Leaving directory '/work/benchmarks/third_party/NPB3.4.4/NPB3.4-OMP/MG'
+make[1]: Leaving directory '/work/benchmarks/third_party/NPB3.4.4/NPB3.4-OMP'
+cp /work/benchmarks/third_party/NPB3.4.4/NPB3.4-OMP/bin/mg.B.x bin-m3/mg.B.x
+cc -std=gnu99 -Wall -flto -O3 -mavx2 -mfma -fopenmp -DOPENMP -DSNIPER_ROI -I/opt/sniper/include \
+  /work/benchmarks/third_party/XSBench/openmp-threading/GridInit.c /work/benchmarks/third_party/XSBench/openmp-threading/Main.c /work/benchmarks/third_party/XSBench/openmp-threading/Materials.c /work/benchmarks/third_party/XSBench/openmp-threading/Simulation.c /work/benchmarks/third_party/XSBench/openmp-threading/XSutils.c /work/benchmarks/third_party/XSBench/openmp-threading/io.c -o bin-m3/XSBench -lm
+/work/benchmarks/third_party/XSBench/openmp-threading/io.c: In function 'binary_read':
+/work/benchmarks/third_party/XSBench/openmp-threading/io.c:487:9: warning: ignoring return value of 'fread' declared with attribute 'warn_unused_result' [-Wunused-result]
+  487 |         fread(&SD, sizeof(SimulationData), 1, fp);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/benchmarks/third_party/XSBench/openmp-threading/io.c:498:9: warning: ignoring return value of 'fread' declared with attribute 'warn_unused_result' [-Wunused-result]
+  498 |         fread(SD.num_nucs,       sizeof(int), SD.length_num_nucs, fp);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/benchmarks/third_party/XSBench/openmp-threading/io.c:499:9: warning: ignoring return value of 'fread' declared with attribute 'warn_unused_result' [-Wunused-result]
+  499 |         fread(SD.concs,          sizeof(double), SD.length_concs, fp);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/benchmarks/third_party/XSBench/openmp-threading/io.c:500:9: warning: ignoring return value of 'fread' declared with attribute 'warn_unused_result' [-Wunused-result]
+  500 |         fread(SD.mats,           sizeof(int), SD.length_mats, fp);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/benchmarks/third_party/XSBench/openmp-threading/io.c:501:9: warning: ignoring return value of 'fread' declared with attribute 'warn_unused_result' [-Wunused-result]
+  501 |         fread(SD.nuclide_grid,   sizeof(NuclideGridPoint), SD.length_nuclide_grid, fp);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/benchmarks/third_party/XSBench/openmp-threading/io.c:502:9: warning: ignoring return value of 'fread' declared with attribute 'warn_unused_result' [-Wunused-result]
+  502 |         fread(SD.index_grid, sizeof(int), SD.length_index_grid, fp);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/benchmarks/third_party/XSBench/openmp-threading/io.c:503:9: warning: ignoring return value of 'fread' declared with attribute 'warn_unused_result' [-Wunused-result]
+  503 |         fread(SD.unionized_energy_array, sizeof(double), SD.length_unionized_energy_array, fp);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+cc -std=gnu99 -O3 -mavx2 -mfma -fopenmp -Icommon/tapp_roi -I/opt/sniper/include -I/work/benchmarks/third_party/tapp-kernels/tapp-kernels/Adventure.region0.20170821/common/include \
+  /work/benchmarks/third_party/tapp-kernels/tapp-kernels/Adventure.region0.20170821/adventure_kernel_region0_tune4_arm_pad-acle.c /work/benchmarks/third_party/tapp-kernels/tapp-kernels/Adventure.region0.20170821/common/src/report.c -o bin-m3/matvecsplit -lm
+/work/benchmarks/third_party/tapp-kernels/tapp-kernels/Adventure.region0.20170821/adventure_kernel_region0_tune4_arm_pad-acle.c: In function 'main':
+/work/benchmarks/third_party/tapp-kernels/tapp-kernels/Adventure.region0.20170821/adventure_kernel_region0_tune4_arm_pad-acle.c:514:3: warning: implicit declaration of function 'report_validation' [-Wimplicit-function-declaration]
+  514 |   report_validation(sum,4.268738964000000e+10,1.0e-13);
+      |   ^~~~~~~~~~~~~~~~~
+make: Leaving directory '/work/benchmarks'

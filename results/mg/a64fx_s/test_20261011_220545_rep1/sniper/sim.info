@@ -1,0 +1,68 @@
+{'cmdline': ['/opt/sniper/run-sniper',
+             '-n',
+             '12',
+             '-c',
+             'a64fx_s',
+             '-c',
+             'power',
+             '--roi',
+             '-d',
+             '/work/results/mg/a64fx_s/test_20261011_220545_rep1/sniper',
+             '--',
+             '/work/benchmarks/bin-m3/mg.S.x'],
+ 'git_revision': '56505e42fd98bca863fac181e769bd3c98d2bb33',
+ 'host': '5942be9bddeb',
+ 'pin_version': 'unknown',
+ 'rusage': (73.862132,
+            15.978061,
+            117012,
+            0,
+            0,
+            0,
+            19802,
+            0,
+            0,
+            0,
+            800,
+            0,
+            0,
+            0,
+            3553445,
+            35861),
+ 'snipercmd': ['bash',
+               '-c',
+               '/opt/sniper/lib/sniper -c /opt/sniper/config/base.cfg '
+               '--general/total_cores=12 '
+               '--general/output_dir=/work/results/mg/a64fx_s/test_20261011_220545_rep1/sniper '
+               '--config=/opt/sniper/config/common_configs/base_system_sniperspace.cfg '
+               '--config=/opt/sniper/config/mmu_configs/mmu_base.cfg '
+               '--config=/opt/sniper/config/pagetable_configs/4_level_radix.cfg '
+               '--config=/opt/sniper/config/pagetable_configs/range_table.cfg '
+               '--config=/opt/sniper/config/physical_memory_allocators/reserve_thp.cfg '
+               '--config=/opt/sniper/config/larc_base.cfg '
+               '--config=/opt/sniper/config/a64fx_s.cfg '
+               '--config=/opt/sniper/config/power.cfg -g --general/magic=true '
+               '-g --traceinput/stop_with_first_app=true -g '
+               '--traceinput/restart_apps=false -g '
+               '--traceinput/stop_with_first_app=false -g '
+               '--traceinput/enabled=true -g '
+               '--traceinput/emulate_syscalls=true -g --traceinput/num_apps=1 '
+               '-g --traceinput/trace_prefix=/tmp/tmprfxejmyz/run_benchmarks'],
+ 't_elapsed': 96.30584907531738,
+ 't_start': 1791767146.1655235,
+ 'tracecmds': [['/opt/sniper/record-trace',
+                '-o',
+                '/tmp/tmprfxejmyz/run_benchmarks',
+                '--roi',
+                '-e',
+                '1',
+                '-s',
+                '0',
+                '-r',
+                '1',
+                '--follow',
+                '--routine-tracing',
+                '--',
+                '/work/benchmarks/bin-m3/mg.S.x']],
+ 'user': None,
+ 'vmem': 1907142656}

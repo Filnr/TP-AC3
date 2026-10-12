@@ -1,0 +1,176 @@
+{
+  "derived": {
+    "l2_dynamic_ceiling_at_9to1_W": 0.014222222222222223,
+    "l2_static_target_scaled_to_simulated_capacity_W": 0.128,
+    "logic_activity_ratio_total_over_peak": 0.1942030924493809,
+    "logic_scale_applicable": false,
+    "logic_scale_factor_to_paper_peak": 0.15053418176392833,
+    "note_l2": "O artigo-base so da 6,14 W para 384 MiB. O valor acima usa a mesma premissa (64 mW por 4 MiB) para a L2 deste cenario; usar um OU outro, nunca somar.",
+    "note_logic": "fator = 27,37 W / potencia de PICO da logica no McPAT. So faz sentido para CMG de 32 nucleos (27,37 W e o teto de 1 CMG do LARC). Aplicar a normalizacao e papel do modelo termico (Membro 1); aqui fica apenas o insumo.",
+    "origin": "calculado por scripts/result_summary.py; NAO e saida de ferramenta"
+  },
+  "mcpat": {
+    "dynamic": {
+      "components_W": {
+        "core-alu": 1.1772453999999999,
+        "core-core": 2.85417748,
+        "core-fp": 1.9238979999999999,
+        "core-ifetch": 0.27668466599999997,
+        "core-int": 0.9217641,
+        "core-mem": 0.62960731,
+        "core-other": 3.6344000005072985e-05,
+        "dcache": 22.31085,
+        "dram": 7.820400887047362,
+        "icache": 0.7546817,
+        "l2": 0.23205500000000004,
+        "l3": 0.0,
+        "noc": 0.0,
+        "nuca": 0.0
+      },
+      "dram_W": 7.820400887047362,
+      "l2_cache_W": 0.23205500000000004,
+      "logic_W": 30.848945000000004
+    },
+    "grouping": "logic = nucleos + L1-I + L1-D + demais blocos do processador; l2_cache = L2 compartilhada; dram = modelo DDR3 do mcpat.py (fora do orcamento do artigo)",
+    "origin": "McPAT 1.0 via tools/mcpat.py do Sniper (x86 generico, 22 nm, 330 K); estimativa de modelo, nao medicao",
+    "peak": {
+      "components_W": {
+        "core-alu": 0.225015704,
+        "core-core": 12.7619428648,
+        "core-fp": 0.962665724,
+        "core-ifetch": 3.28773710196,
+        "core-int": 0.388769808,
+        "core-mem": 0.8274565096000001,
+        "core-other": 0.7725625806399705,
+        "dcache": 87.90845828,
+        "dram": 12.072400887047362,
+        "icache": 74.67593344,
+        "l2": 2.2999299,
+        "l3": 0.0,
+        "noc": 0.008628087,
+        "nuca": 0.0
+      },
+      "dram_W": 12.072400887047362,
+      "l2_cache_W": 2.2999299,
+      "logic_W": 181.81917009999998
+    },
+    "static": {
+      "components_W": {
+        "core-alu": 0.049285103999999996,
+        "core-core": 0.0990564648,
+        "core-fp": 0.118920024,
+        "core-ifetch": 0.14839310196,
+        "core-int": 0.09857020799999999,
+        "core-mem": 0.024940809599999995,
+        "core-other": 0.4359045806400008,
+        "dcache": 2.07804828,
+        "dram": 4.252,
+        "icache": 1.39915344,
+        "l2": 0.9941999,
+        "l3": 0.0,
+        "noc": 0.008628087,
+        "nuca": 0.0
+      },
+      "dram_W": 4.252,
+      "l2_cache_W": 0.9941999,
+      "logic_W": 4.460900100000001
+    },
+    "total": {
+      "components_W": {
+        "core-alu": 1.2265305039999999,
+        "core-core": 2.9532339448,
+        "core-fp": 2.042818024,
+        "core-ifetch": 0.42507776795999996,
+        "core-int": 1.020334308,
+        "core-mem": 0.6545481196,
+        "core-other": 0.43594092464000767,
+        "dcache": 24.38889828,
+        "dram": 12.072400887047362,
+        "icache": 2.15383514,
+        "l2": 1.2262549,
+        "l3": 0.0,
+        "noc": 0.008628087,
+        "nuca": 0.0
+      },
+      "dram_W": 12.072400887047362,
+      "l2_cache_W": 1.2262549,
+      "logic_W": 35.309845100000004
+    }
+  },
+  "paper_reference": {
+    "chip_tdp_W": 547.0,
+    "cmgs_per_chip": 16,
+    "l2_capacity_of_reference_MiB": 384,
+    "l2_reference_temperature_K": 350,
+    "l2_static_basis_W_per_MiB": 0.016,
+    "l2_static_power_per_cmg_W": 6.14,
+    "l2_static_to_dynamic_ratio": 9.0,
+    "logic_power_per_cmg_W": 27.37,
+    "source": "Domke et al., ACM TACO 20(4), 2023, Secao 2.3; reproduzido na Secao 4.1 do PDF"
+  },
+  "run": {
+    "experimental": "false",
+    "rep": "1",
+    "scenario": "a64fx_s",
+    "size": "test",
+    "sniper_wall_s": "244",
+    "workload": "matvecsplit"
+  },
+  "sniper": {
+    "core_busy_fraction": [
+      1.0,
+      1.0,
+      0.9831597329489962,
+      0.99617653107091,
+      0.9936072157219105,
+      0.9978461245969201,
+      0.9941849950986966,
+      0.996028652173954,
+      0.9924970508532529,
+      1.0,
+      1.0,
+      0.9954076251952279
+    ],
+    "core_busy_fraction_avg": 0.9957423273049889,
+    "dram_reads": 401606,
+    "dram_writes": 3707,
+    "frequency_GHz": 2.2,
+    "instructions_per_core": [
+      4674956,
+      4411048,
+      3653615,
+      4251068,
+      4065657,
+      4275476,
+      4159305,
+      4156598,
+      4058273,
+      4758556,
+      4938115,
+      4156217
+    ],
+    "instructions_total": 51558884,
+    "ipc_aggregate": 0.46108360659666314,
+    "l1d": {
+      "accesses": 34624894,
+      "accesses_per_s": 8174638428.823345,
+      "loads": 26086681,
+      "miss_rate_pct": 1.6120540325697459,
+      "misses": 558172,
+      "stores": 8538213
+    },
+    "l2": {
+      "accesses": 560561,
+      "accesses_per_s": 132343610.70678349,
+      "loads": 555478,
+      "miss_rate_pct": 72.1735903853461,
+      "misses": 404577,
+      "stores": 5083
+    },
+    "l2_shared_cores": 12,
+    "l2_size_KiB": 8192,
+    "ncores": 12,
+    "origin": "Sniper 8.1, regiao de interesse (roi-begin..roi-end)",
+    "simulated_time_s": 0.004235648377782
+  }
+}

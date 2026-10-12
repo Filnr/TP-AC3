@@ -1,0 +1,15 @@
+data:      2026-10-12T15:42:55-03:00
+workload:  xsbench   cenario: larc_a   size: test   rep: 1
+imagem:    larc-thermal-sniper:latest (sha256:173130a4f97b1559fb9bab732472a9b7c0790c37673cfa142b6358543e46d2a2)
+git:       7009177467085722db9dfb0b4de9dcafc54c9dba (dirty: 25 arquivos)
+host:      Linux 7.2.7-arch1-1 x86_64, 16 threads, 13.3 GiB
+timeout:   3600 s
+nativo:    OMP_NUM_THREADS=32 GFORTRAN_UNBUFFERED_ALL=1 /work/benchmarks/bin-m3/XSBench -t 32 -m event -s small -l 100000
+sniper:    OMP_NUM_THREADS=32 GFORTRAN_UNBUFFERED_ALL=1 /opt/sniper/run-sniper -n 32 -c larc_a -c power --roi -d /work/results/xsbench/larc_a/test_20261012_154255_rep1/sniper -- /work/benchmarks/bin-m3/XSBench -t 32 -m event -s small -l 100000
+native_rc: 1
+sniper_rc: 0
+sniper_wall_s: 3465
+native_rc: 1
+sniper_rc: 0
+sniper_wall_s: 3465
+nota: validacao, McPAT e resumo feitos a mao depois que o run_workload.sh foi encerrado pelo sistema; a simulacao ja tinha terminado (rc 0)

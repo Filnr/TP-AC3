@@ -1,0 +1,33 @@
+gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0
+GNU Fortran (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0
+make: Entering directory '/work/benchmarks'
+mkdir -p build
+cc -O2 -I/opt/sniper/include -c common/sim_roi_shim.c -o build/sim_roi_shim.o
+make -C /work/benchmarks/third_party/NPB3.4.4/NPB3.4-OMP clean >/dev/null
+make -C /work/benchmarks/third_party/NPB3.4.4/NPB3.4-OMP mg CLASS=S
+make[1]: Entering directory '/work/benchmarks/third_party/NPB3.4.4/NPB3.4-OMP'
+   ============================================
+   =      NAS PARALLEL BENCHMARKS 3.4         =
+   =      OpenMP Versions                     =
+   =      Fortran/C                           =
+   ============================================
+
+cd MG; make CLASS=S
+make[2]: Entering directory '/work/benchmarks/third_party/NPB3.4.4/NPB3.4-OMP/MG'
+make[3]: Entering directory '/work/benchmarks/third_party/NPB3.4.4/NPB3.4-OMP/sys'
+gcc  -o setparams setparams.c
+make[3]: Leaving directory '/work/benchmarks/third_party/NPB3.4.4/NPB3.4-OMP/sys'
+../sys/setparams mg S
+gfortran -c  -O3 -mavx2 -mfma -fopenmp mg_data.f90
+gfortran -c  -O3 -mavx2 -mfma -fopenmp mg.f90
+cd ../common; gfortran -c  -O3 -mavx2 -mfma -fopenmp print_results.f90
+cd ../common; gfortran -c  -O3 -mavx2 -mfma -fopenmp randi8.f90
+cd ../common; gfortran -c  -O3 -mavx2 -mfma -fopenmp timers.f90
+cd ../common; gcc -c  -O3 -mavx2 -mfma -fopenmp  -o wtime.o ../common/wtime.c
+gfortran -O3 -mavx2 -mfma -fopenmp -o ../bin/mg.S.x mg.o mg_data.o ../common/print_results.o ../common/randi8.o ../common/timers.o ../common/wtime.o /work/benchmarks/build/sim_roi_shim.o
+make[2]: Leaving directory '/work/benchmarks/third_party/NPB3.4.4/NPB3.4-OMP/MG'
+make[1]: Leaving directory '/work/benchmarks/third_party/NPB3.4.4/NPB3.4-OMP'
+cp /work/benchmarks/third_party/NPB3.4.4/NPB3.4-OMP/bin/mg.S.x bin/mg.S.x
+cp: cannot create regular file 'bin/mg.S.x': Permission denied
+make: *** [Makefile:48: bin/mg.S.x] Error 1
+make: Leaving directory '/work/benchmarks'

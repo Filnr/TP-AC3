@@ -1,0 +1,5 @@
+gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0
+GNU Fortran (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0
+make: Entering directory '/work/benchmarks'
+make: Nothing to be done for 'matvecsplit'.
+make: Leaving directory '/work/benchmarks'

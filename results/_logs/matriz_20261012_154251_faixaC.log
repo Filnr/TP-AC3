@@ -1,0 +1,5 @@
+[15:42:55] xsbench / larc_a / test / rep 1 -> results/xsbench/larc_a/test_20261012_154255_rep1
+[16:40:49] simulacao ok em 3465 s; resultado identico ao nativo: Verification checksum: 299541 (WARNING - INVALID CHECKSUM!)
+           [SNIPER] Simulated 116.3M instructions, 2596.9M cycles, 0.04 IPC
+           [SNIPER] Simulation speed 441.9 KIPS (13.8 KIPS / target core - 72416.5ns/instr)
+[16:40:49] McPAT em results/xsbench/larc_a/test_20261012_154255_rep1 (timeout 3600 s)

@@ -1,0 +1,84 @@
+{'cmdline': ['/opt/sniper/run-sniper',
+             '-n',
+             '32',
+             '-c',
+             'larc_c',
+             '-c',
+             'power',
+             '--roi',
+             '-d',
+             '/work/results/xsbench/larc_c/test_20261012_110949_rep1/sniper',
+             '--',
+             '/work/benchmarks/bin-m3/XSBench',
+             '-t',
+             '32',
+             '-m',
+             'event',
+             '-s',
+             'small',
+             '-l',
+             '100000'],
+ 'git_revision': '56505e42fd98bca863fac181e769bd3c98d2bb33',
+ 'host': '29b4944c3fe7',
+ 'pin_version': 'unknown',
+ 'rusage': (1207.794083,
+            40.223439,
+            611480,
+            0,
+            0,
+            0,
+            142104,
+            95,
+            0,
+            21432,
+            1408,
+            0,
+            0,
+            0,
+            6550441,
+            1473534),
+ 'snipercmd': ['bash',
+               '-c',
+               '/opt/sniper/lib/sniper -c /opt/sniper/config/base.cfg '
+               '--general/total_cores=32 '
+               '--general/output_dir=/work/results/xsbench/larc_c/test_20261012_110949_rep1/sniper '
+               '--config=/opt/sniper/config/common_configs/base_system_sniperspace.cfg '
+               '--config=/opt/sniper/config/mmu_configs/mmu_base.cfg '
+               '--config=/opt/sniper/config/pagetable_configs/4_level_radix.cfg '
+               '--config=/opt/sniper/config/pagetable_configs/range_table.cfg '
+               '--config=/opt/sniper/config/physical_memory_allocators/reserve_thp.cfg '
+               '--config=/opt/sniper/config/larc_base.cfg '
+               '--config=/opt/sniper/config/larc_c.cfg '
+               '--config=/opt/sniper/config/power.cfg -g --general/magic=true '
+               '-g --traceinput/stop_with_first_app=true -g '
+               '--traceinput/restart_apps=false -g '
+               '--traceinput/stop_with_first_app=false -g '
+               '--traceinput/enabled=true -g '
+               '--traceinput/emulate_syscalls=true -g --traceinput/num_apps=1 '
+               '-g --traceinput/trace_prefix=/tmp/tmp_v_3mhnr/run_benchmarks'],
+ 't_elapsed': 1779.5860137939453,
+ 't_start': 1791814191.3703215,
+ 'tracecmds': [['/opt/sniper/record-trace',
+                '-o',
+                '/tmp/tmp_v_3mhnr/run_benchmarks',
+                '--roi',
+                '-e',
+                '1',
+                '-s',
+                '0',
+                '-r',
+                '1',
+                '--follow',
+                '--routine-tracing',
+                '--',
+                '/work/benchmarks/bin-m3/XSBench',
+                '-t',
+                '32',
+                '-m',
+                'event',
+                '-s',
+                'small',
+                '-l',
+                '100000']],
+ 'user': None,
+ 'vmem': 5260750848}
